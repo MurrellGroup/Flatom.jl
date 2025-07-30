@@ -1,6 +1,14 @@
 using Flatom
 using Test
 
+using BioStructures
+
 @testset "Flatom.jl" begin
-    # Write your tests here.
+
+    @testset "flatoms" begin
+
+        @test flatoms"1ASS" isa Vector{<:NamedTuple}
+
+    end
+
 end
