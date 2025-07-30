@@ -16,7 +16,7 @@ Flatom is a Julia package for converting biomolecular structures to a minimal fl
 - `resnum::Int32`: residue number (can be optionally renumbered using the MMCIF file)
 - `resname::StaticStrings.StaticString{3}`: 3-character alphanumeric residue name
 - `atomname::StaticStrings.StaticString{4}`: 4-character alphanumeric atom name
-- `x::Float32`, `y::Float32`, `z::Float32`: coordinates
+- `coords::StaticArrays.SVector{3,Float32}`: 3D coordinates
 
 Each atom in this format takes up 28 bytes of memory (not 27 for technical reasons).
 
